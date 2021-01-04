@@ -28,8 +28,8 @@ Click Next, Select "Install the hardware that I manually select from a list (Adv
 
 Make sure "Show All Devices" is selected and then Click Next.
 
-Click "Have Disk...", Navigate to the "Debug" or "Release" folder that contains the ".inf", ".sys" and ".cat" driver files you want to test and
-continue with the rest of the steps in the Add Hardware Wizard.
+Click "Have Disk...", Navigate to the "Debug" or "Release" folder that contains the ".inf", ".sys" and ".cat" of the driver files you want to test
+and continue with the rest of the steps in the Add Hardware Wizard.
 
 To Uninstall, right click the device under the "Sample" section and select "Uninstall device".
 
