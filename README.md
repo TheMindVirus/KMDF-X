@@ -3,7 +3,7 @@ Windows Diagnostic Drivers for Raspberry Pi 4 in Low Peripheral Mode (no operati
 
 ## Please use with caution, this repository is indended for educational purposes and testing. ##
 
-It may be used as a template for production drivers to start with.
+This project may be used as a template to aid the development of production drivers for ARM64 platforms similar to the Raspberry Pi 4.
 
 Requires Visual Studio 2019 Community Edition with ARM64 WDK Installed (and C++ ARM64 Build Tools with Spectre Mitigated Libs)
 
