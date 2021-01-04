@@ -1,0 +1,1 @@
+C:\Users\cotaa\Downloads\Windows-driver-samples-master\Windows-driver-samples-master\video\pixlib\Release\PixLib.lib

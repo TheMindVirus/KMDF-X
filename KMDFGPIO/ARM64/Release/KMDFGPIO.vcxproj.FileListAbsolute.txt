@@ -1,0 +1,1 @@
+C:\Users\cotaa\Documents\Visual Studio 2019\Projects\KMDFGPIO\ARM64\Release\KMDFGPIO.sys

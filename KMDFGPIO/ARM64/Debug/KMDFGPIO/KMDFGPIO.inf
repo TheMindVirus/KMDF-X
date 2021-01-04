@@ -1,0 +1,90 @@
+;
+; KMDFGPIO.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=Sample ; TODO: edit Class
+ClassGuid={78A1C341-4539-11d3-B88D-00C04FAD5171} ; TODO: edit ClassGuid
+Provider=%ManufacturerName%
+CatalogFile=KMDFGPIO.cat
+DriverVer = 01/04/2021,22.46.38.269
+PnpLockDown=1
+
+[DestinationDirs]
+DefaultDestDir = 12
+KMDFGPIO_Device_CoInstaller_CopyFiles = 11
+
+; ================= Class section =====================
+
+[ClassInstall32]
+Addreg=SampleClassReg
+
+[SampleClassReg]
+HKR,,,0,%ClassName%
+HKR,,Icon,,-5
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+KMDFGPIO.sys  = 1,,
+;
+
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTARM64
+
+[Standard.NTARM64]
+%KMDFGPIO.DeviceDesc%=KMDFGPIO_Device, Root\KMDFGPIO ; TODO: edit hw-id
+
+[KMDFGPIO_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+KMDFGPIO.sys
+
+;-------------- Service installation
+[KMDFGPIO_Device.NT.Services]
+AddService = KMDFGPIO,%SPSVCINST_ASSOCSERVICE%, KMDFGPIO_Service_Inst
+
+; -------------- KMDFGPIO driver install sections
+[KMDFGPIO_Service_Inst]
+DisplayName    = %KMDFGPIO.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\KMDFGPIO.sys
+
+;
+;--- KMDFGPIO_Device Coinstaller installation ------
+;
+
+[KMDFGPIO_Device.NT.CoInstallers]
+AddReg=KMDFGPIO_Device_CoInstaller_AddReg
+CopyFiles=KMDFGPIO_Device_CoInstaller_CopyFiles
+
+[KMDFGPIO_Device_CoInstaller_AddReg]
+;
+
+
+[KMDFGPIO_Device_CoInstaller_CopyFiles]
+;
+
+
+[KMDFGPIO_Device.NT.Wdf]
+KmdfService =  KMDFGPIO, KMDFGPIO_wdfsect
+[KMDFGPIO_wdfsect]
+KmdfLibraryVersion = 1.15
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="Alastair Cota" ;TODO: Replace with your manufacturer name
+ClassName="Samples" ; TODO: edit ClassName
+DiskName = "KMDFGPIO Installation Disk"
+KMDFGPIO.DeviceDesc = "KMDFGPIO Device"
+KMDFGPIO.SVCDESC = "KMDFGPIO Service"

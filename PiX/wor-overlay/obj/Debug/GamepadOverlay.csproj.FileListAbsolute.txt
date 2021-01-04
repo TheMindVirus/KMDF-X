@@ -1,0 +1,9 @@
+C:\Users\cotaa\Documents\Visual Studio 2019\Projects\GamepadOverlay\obj\Debug\GamepadOverlay.Form1.resources
+C:\Users\cotaa\Documents\Visual Studio 2019\Projects\GamepadOverlay\obj\Debug\GamepadOverlay.Properties.Resources.resources
+C:\Users\cotaa\Documents\Visual Studio 2019\Projects\GamepadOverlay\obj\Debug\GamepadOverlay.csproj.GenerateResource.cache
+C:\Users\cotaa\Documents\Visual Studio 2019\Projects\GamepadOverlay\obj\Debug\GamepadOverlay.csproj.CoreCompileInputs.cache
+C:\Users\cotaa\Documents\Visual Studio 2019\Projects\GamepadOverlay\bin\Debug\wor-overlay.exe.config
+C:\Users\cotaa\Documents\Visual Studio 2019\Projects\GamepadOverlay\bin\Debug\wor-overlay.exe
+C:\Users\cotaa\Documents\Visual Studio 2019\Projects\GamepadOverlay\bin\Debug\wor-overlay.pdb
+C:\Users\cotaa\Documents\Visual Studio 2019\Projects\GamepadOverlay\obj\Debug\wor-overlay.exe
+C:\Users\cotaa\Documents\Visual Studio 2019\Projects\GamepadOverlay\obj\Debug\wor-overlay.pdb

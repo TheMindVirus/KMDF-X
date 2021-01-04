@@ -1,0 +1,25 @@
+﻿  Building 'KMDFGPIO' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Stamping ARM64\Debug\KMDFGPIO.inf
+  Stamping [Version] section with DriverVer=01/04/2021,22.46.38.269
+  Driver.c
+  Generating code
+  Finished generating code
+  KMDFGPIO.vcxproj -> C:\Users\cotaa\Documents\GitHub\Downloads\KMDF-X\KMDFGPIO\ARM64\Debug\KMDFGPIO.sys
+  Done Adding Additional Store
+  Successfully signed: C:\Users\cotaa\Documents\GitHub\Downloads\KMDF-X\KMDFGPIO\ARM64\Debug\KMDFGPIO.sys
+  
+  Driver is 'Universal'.
+  .........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\Users\cotaa\Documents\GitHub\Downloads\KMDF-X\KMDFGPIO\ARM64\Debug\KMDFGPIO\kmdfgpio.cat
+  Done Adding Additional Store
+  Successfully signed: C:\Users\cotaa\Documents\GitHub\Downloads\KMDF-X\KMDFGPIO\ARM64\Debug\KMDFGPIO\kmdfgpio.cat
+  

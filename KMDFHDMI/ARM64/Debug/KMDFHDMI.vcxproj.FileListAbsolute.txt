@@ -1,0 +1,2 @@
+C:\Users\cotaa\Documents\Visual Studio 2019\Projects\KMDFHDMI\ARM64\Debug\KMDFHDMI.sys
+C:\Users\cotaa\Documents\Visual Studio 2019\Projects\KMDFHDMI\ARM64\Debug\KMDFHDMI.pdb

@@ -1,0 +1,2 @@
+C:\Users\cotaa\Documents\Visual Studio 2019\Projects\KMDFMBOX\ARM64\Debug\KMDFMBOX.sys
+C:\Users\cotaa\Documents\Visual Studio 2019\Projects\KMDFMBOX\ARM64\Debug\KMDFMBOX.pdb

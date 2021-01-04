@@ -1,0 +1,2 @@
+C:\Users\cotaa\Downloads\Windows-driver-samples-master\Windows-driver-samples-master\video\pixlib\Debug\PixLib.lib
+C:\Users\cotaa\Downloads\Windows-driver-samples-master\Windows-driver-samples-master\video\pixlib\Debug\PixLib.pdb

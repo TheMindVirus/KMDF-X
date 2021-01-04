@@ -1,0 +1,2 @@
+C:\Users\cotaa\Documents\Visual Studio 2019\Projects\KMDFDMA\ARM64\Debug\KMDFDMA.sys
+C:\Users\cotaa\Documents\Visual Studio 2019\Projects\KMDFDMA\ARM64\Debug\KMDFDMA.pdb

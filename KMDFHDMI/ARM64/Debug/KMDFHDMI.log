@@ -1,0 +1,25 @@
+﻿  Building 'KMDFHDMI' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Stamping ARM64\Debug\KMDFHDMI.inf
+  Stamping [Version] section with DriverVer=12/21/2020,21.34.47.408
+  Driver.c
+  Generating code
+  Finished generating code
+  KMDFHDMI.vcxproj -> C:\Users\cotaa\Documents\Visual Studio 2019\Projects\KMDFHDMI\ARM64\Debug\KMDFHDMI.sys
+  Done Adding Additional Store
+  Successfully signed: C:\Users\cotaa\Documents\Visual Studio 2019\Projects\KMDFHDMI\ARM64\Debug\KMDFHDMI.sys
+  
+  Driver is 'Universal'.
+  ........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\Users\cotaa\Documents\Visual Studio 2019\Projects\KMDFHDMI\ARM64\Debug\KMDFHDMI\kmdfhdmi.cat
+  Done Adding Additional Store
+  Successfully signed: C:\Users\cotaa\Documents\Visual Studio 2019\Projects\KMDFHDMI\ARM64\Debug\KMDFHDMI\kmdfhdmi.cat
+  
