@@ -31,5 +31,5 @@ continue with the rest of the steps in the Add Hardware Wizard.
 
 To Uninstall, right click the device under the "Sample" section and select "Uninstall device".
 
-### You may be prompted with a security warning if driver signature enforcement is enabled. ###
-### Only follow these instructions if you are testing Windows and you know what you are doing. ###
+### You may be prompted with a security warning if driver signature enforcement is enabled.
+ Only follow these instructions if you are testing Windows and you know what you are doing. ###
