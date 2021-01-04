@@ -11,7 +11,7 @@ Test Signing On with Windows 10 ARM Insider Build 21277 in Test Mode
 
 Inf2Cat On with /uselocaltime
 
-Output Directory and Intermediate Directory both set to the same location: $(SolutionDir)$(Platform)\$(ConfigurationName)\
+Output Directory and Intermediate Directory both set to the same location: $(SolutionDir)$(Platform)\\$(ConfigurationName)\
 
 Wpp Tracing Off in favour of Text File Debug
 
