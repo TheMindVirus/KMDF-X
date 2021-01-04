@@ -22,11 +22,11 @@ and also for reporting a memory resource to Windows for detection. Writing is su
 
 ## Installation ##
 
-Open Device Manager on the Raspberry Pi, click anywhere and then click "Action->Add Legacy Hardware"
+Open Device Manager on the Raspberry Pi, click anywhere and then click "Action->Add Legacy Hardware".
 
-Click Next, Select "Install the hardware that I manually select from a list (Advanced)" and Click Next again
+Click Next, Select "Install the hardware that I manually select from a list (Advanced)" and Click Next again.
 
-Make sure "Show All Devices" is selected and then Click Next
+Make sure "Show All Devices" is selected and then Click Next.
 
 Click "Have Disk...", Navigate to the folder that contains the ".inf" file of the driver you want to test and
 continue with the rest of the steps in the Add Hardware Wizard.
