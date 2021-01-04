@@ -5,7 +5,9 @@ Windows Diagnostic Drivers for Raspberry Pi 4 in Low Peripheral Mode (no operati
 
 This project may be used as a template to aid the development of production drivers for ARM64 platforms similar to the Raspberry Pi 4.
 
-Requires Visual Studio 2019 Community Edition with ARM64 WDK Installed (and C++ ARM64 Build Tools with Spectre Mitigated Libs)
+## Requirements ##
+
+Visual Studio 2019 Community Edition with ARM64 WDK Installed (and C++ ARM64 Build Tools with Spectre Mitigated Libs)
 
 Test Signing On with Windows 10 ARM Insider Build 21277 in Test Mode
 
