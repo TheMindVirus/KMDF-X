@@ -1,0 +1,2 @@
+C:\Users\cotaa\Documents\Visual Studio 2019\Projects\KMDFV3D\ARM64\Debug\KMDFV3D.sys
+C:\Users\cotaa\Documents\Visual Studio 2019\Projects\KMDFV3D\ARM64\Debug\KMDFV3D.pdb

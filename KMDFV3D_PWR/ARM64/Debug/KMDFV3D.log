@@ -1,0 +1,26 @@
+﻿  Building 'KMDFV3D' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Stamping ARM64\Debug\KMDFV3D.inf
+  Stamping [Version] section with DriverVer=02/06/2021,14.31.11.672
+  Driver.c
+  DXGKDDI.c
+  Generating code
+  Finished generating code
+  KMDFV3D.vcxproj -> C:\Users\cotaa\Documents\Visual Studio 2019\Projects\KMDFV3D\ARM64\Debug\KMDFV3D.sys
+  Done Adding Additional Store
+  Successfully signed: C:\Users\cotaa\Documents\Visual Studio 2019\Projects\KMDFV3D\ARM64\Debug\KMDFV3D.sys
+  
+  Driver is 'Universal'.
+  ........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\Users\cotaa\Documents\Visual Studio 2019\Projects\KMDFV3D\ARM64\Debug\KMDFV3D\kmdfv3d.cat
+  Done Adding Additional Store
+  Successfully signed: C:\Users\cotaa\Documents\Visual Studio 2019\Projects\KMDFV3D\ARM64\Debug\KMDFV3D\kmdfv3d.cat
+  
