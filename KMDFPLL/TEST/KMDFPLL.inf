@@ -1,0 +1,90 @@
+;
+; KMDFPLL.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=Sample ; TODO: edit Class
+ClassGuid={78A1C341-4539-11d3-B88D-00C04FAD5171} ; TODO: edit ClassGuid
+Provider=%ManufacturerName%
+CatalogFile=KMDFPLL.cat
+DriverVer = 06/08/2021,13.55.5.298
+PnpLockDown=1
+
+[DestinationDirs]
+DefaultDestDir = 12
+KMDFPLL_Device_CoInstaller_CopyFiles = 11
+
+; ================= Class section =====================
+
+[ClassInstall32]
+Addreg=SampleClassReg
+
+[SampleClassReg]
+HKR,,,0,%ClassName%
+HKR,,Icon,,-5
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+KMDFPLL.sys  = 1,,
+;
+
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTARM64
+
+[Standard.NTARM64]
+%KMDFPLL.DeviceDesc%=KMDFPLL_Device, Root\KMDFPLL ; TODO: edit hw-id
+
+[KMDFPLL_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+KMDFPLL.sys
+
+;-------------- Service installation
+[KMDFPLL_Device.NT.Services]
+AddService = KMDFPLL,%SPSVCINST_ASSOCSERVICE%, KMDFPLL_Service_Inst
+
+; -------------- KMDFPLL driver install sections
+[KMDFPLL_Service_Inst]
+DisplayName    = %KMDFPLL.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\KMDFPLL.sys
+
+;
+;--- KMDFPLL_Device Coinstaller installation ------
+;
+
+[KMDFPLL_Device.NT.CoInstallers]
+AddReg=KMDFPLL_Device_CoInstaller_AddReg
+CopyFiles=KMDFPLL_Device_CoInstaller_CopyFiles
+
+[KMDFPLL_Device_CoInstaller_AddReg]
+;
+
+
+[KMDFPLL_Device_CoInstaller_CopyFiles]
+;
+
+
+[KMDFPLL_Device.NT.Wdf]
+KmdfService =  KMDFPLL, KMDFPLL_wdfsect
+[KMDFPLL_wdfsect]
+KmdfLibraryVersion = 1.15
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="Alastair Cota" ;TODO: Replace with your manufacturer name
+ClassName="Samples" ; TODO: edit ClassName
+DiskName = "KMDFPLL Installation Disk"
+KMDFPLL.DeviceDesc = "KMDFPLL Device"
+KMDFPLL.SVCDESC = "KMDFPLL Service"
