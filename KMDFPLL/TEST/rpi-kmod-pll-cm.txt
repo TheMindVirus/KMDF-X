@@ -1,0 +1,148 @@
+[CALL]: init_module
+[INFO]: BEGIN_READ
+[MMIO]: Address: 0xFE101000 | Value: 0x0000636D |   cm
+[MMIO]: Address: 0xFE101004 | Value: 0x0000636D |   cm
+[MMIO]: Address: 0xFE101008 | Value: 0x00000255 |    U
+[MMIO]: Address: 0xFE10100C | Value: 0x00002000 |     
+[MMIO]: Address: 0xFE101010 | Value: 0x00000040 |    @
+[MMIO]: Address: 0xFE101014 | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE101018 | Value: 0x00000040 |    @
+[MMIO]: Address: 0xFE10101C | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE101020 | Value: 0x00000040 |    @
+[MMIO]: Address: 0xFE101024 | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE101028 | Value: 0x00000244 |    D
+[MMIO]: Address: 0xFE10102C | Value: 0x00001000 |     
+[MMIO]: Address: 0xFE101030 | Value: 0x00000244 |    D
+[MMIO]: Address: 0xFE101034 | Value: 0x00001000 |     
+[MMIO]: Address: 0xFE101038 | Value: 0x000002D4 |     
+[MMIO]: Address: 0xFE10103C | Value: 0x00001000 |     
+[MMIO]: Address: 0xFE101040 | Value: 0x00000200 |     
+[MMIO]: Address: 0xFE101044 | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE101048 | Value: 0x00000200 |     
+[MMIO]: Address: 0xFE10104C | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE101050 | Value: 0x0000636D |   cm
+[MMIO]: Address: 0xFE101054 | Value: 0x0000636D |   cm
+[MMIO]: Address: 0xFE101058 | Value: 0x00000200 |     
+[MMIO]: Address: 0xFE10105C | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE101060 | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE101064 | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE101068 | Value: 0x00000200 |     
+[MMIO]: Address: 0xFE10106C | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE101070 | Value: 0x00000200 |     
+[MMIO]: Address: 0xFE101074 | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE101078 | Value: 0x00000200 |     
+[MMIO]: Address: 0xFE10107C | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE101080 | Value: 0x00000200 |     
+[MMIO]: Address: 0xFE101084 | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE101088 | Value: 0x0000636D |   cm
+[MMIO]: Address: 0xFE10108C | Value: 0x0000636D |   cm
+[MMIO]: Address: 0xFE101090 | Value: 0x00000091 |     
+[MMIO]: Address: 0xFE101094 | Value: 0x00004000 |   @ 
+[MMIO]: Address: 0xFE101098 | Value: 0x00000200 |     
+[MMIO]: Address: 0xFE10109C | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE1010A0 | Value: 0x00000096 |     
+[MMIO]: Address: 0xFE1010A4 | Value: 0x00007000 |   p 
+[MMIO]: Address: 0xFE1010A8 | Value: 0x0000636D |   cm
+[MMIO]: Address: 0xFE1010AC | Value: 0x0000636D |   cm
+[MMIO]: Address: 0xFE1010B0 | Value: 0x00000200 |     
+[MMIO]: Address: 0xFE1010B4 | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE1010B8 | Value: 0x0000636D |   cm
+[MMIO]: Address: 0xFE1010BC | Value: 0x0000636D |   cm
+[MMIO]: Address: 0xFE1010C0 | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE1010C4 | Value: 0x0000004A |    J
+[MMIO]: Address: 0xFE1010C8 | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE1010CC | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE1010D0 | Value: 0x00000200 |     
+[MMIO]: Address: 0xFE1010D4 | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE1010D8 | Value: 0x00000200 |     
+[MMIO]: Address: 0xFE1010DC | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE1010E0 | Value: 0x00000091 |     
+[MMIO]: Address: 0xFE1010E4 | Value: 0x00010000 |     
+[MMIO]: Address: 0xFE1010E8 | Value: 0x00000291 |     
+[MMIO]: Address: 0xFE1010EC | Value: 0x00036000 |   ` 
+[MMIO]: Address: 0xFE1010F0 | Value: 0x00000296 |     
+[MMIO]: Address: 0xFE1010F4 | Value: 0x0000FA00 |     
+[MMIO]: Address: 0xFE1010F8 | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE1010FC | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE101100 | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE101104 | Value: 0x0000008A |     
+[MMIO]: Address: 0xFE101108 | Value: 0x00000028 |    (
+[MMIO]: Address: 0xFE10110C | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE101110 | Value: 0x0000636D |   cm
+[MMIO]: Address: 0xFE101114 | Value: 0x00000F0F |     
+[MMIO]: Address: 0xFE101118 | Value: 0x00B1BCCF |     
+[MMIO]: Address: 0xFE10111C | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE101120 | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE101124 | Value: 0x0000636D |   cm
+[MMIO]: Address: 0xFE101128 | Value: 0x00000036 |    6
+[MMIO]: Address: 0xFE10112C | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE101130 | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE101134 | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE101138 | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE10113C | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE101140 | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE101144 | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE101148 | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE10114C | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE101150 | Value: 0x0000636D |   cm
+[MMIO]: Address: 0xFE101154 | Value: 0x0000636D |   cm
+[MMIO]: Address: 0xFE101158 | Value: 0x00000200 |     
+[MMIO]: Address: 0xFE10115C | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE101160 | Value: 0x00000098 |     
+[MMIO]: Address: 0xFE101164 | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE101168 | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE10116C | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE101170 | Value: 0x00000028 |    (
+[MMIO]: Address: 0xFE101174 | Value: 0x0000636D |   cm
+[MMIO]: Address: 0xFE101178 | Value: 0x0000636D |   cm
+[MMIO]: Address: 0xFE10117C | Value: 0x0000636D |   cm
+[MMIO]: Address: 0xFE101180 | Value: 0x0000636D |   cm
+[MMIO]: Address: 0xFE101184 | Value: 0x0000636D |   cm
+[MMIO]: Address: 0xFE101188 | Value: 0x0000636D |   cm
+[MMIO]: Address: 0xFE10118C | Value: 0x0000636D |   cm
+[MMIO]: Address: 0xFE101190 | Value: 0x00000091 |     
+[MMIO]: Address: 0xFE101194 | Value: 0x0001B000 |     
+[MMIO]: Address: 0xFE101198 | Value: 0x0000636D |   cm
+[MMIO]: Address: 0xFE10119C | Value: 0x0000636D |   cm
+[MMIO]: Address: 0xFE1011A0 | Value: 0x0000636D |   cm
+[MMIO]: Address: 0xFE1011A4 | Value: 0x0000636D |   cm
+[MMIO]: Address: 0xFE1011A8 | Value: 0x0000636D |   cm
+[MMIO]: Address: 0xFE1011AC | Value: 0x0000636D |   cm
+[MMIO]: Address: 0xFE1011B0 | Value: 0x0000636D |   cm
+[MMIO]: Address: 0xFE1011B4 | Value: 0x0000636D |   cm
+[MMIO]: Address: 0xFE1011B8 | Value: 0x0000636D |   cm
+[MMIO]: Address: 0xFE1011BC | Value: 0x0000636D |   cm
+[MMIO]: Address: 0xFE1011C0 | Value: 0x00000296 |     
+[MMIO]: Address: 0xFE1011C4 | Value: 0x00003000 |   0 
+[MMIO]: Address: 0xFE1011C8 | Value: 0x000002D4 |     
+[MMIO]: Address: 0xFE1011CC | Value: 0x00001000 |     
+[MMIO]: Address: 0xFE1011D0 | Value: 0x00000296 |     
+[MMIO]: Address: 0xFE1011D4 | Value: 0x00007800 |   x 
+[MMIO]: Address: 0xFE1011D8 | Value: 0x00000296 |     
+[MMIO]: Address: 0xFE1011DC | Value: 0x00003C00 |   < 
+[MMIO]: Address: 0xFE1011E0 | Value: 0x00000296 |     
+[MMIO]: Address: 0xFE1011E4 | Value: 0x00003000 |   0 
+[MMIO]: Address: 0xFE1011E8 | Value: 0x00000296 |     
+[MMIO]: Address: 0xFE1011EC | Value: 0x00003000 |   0 
+[MMIO]: Address: 0xFE1011F0 | Value: 0x00000291 |     
+[MMIO]: Address: 0xFE1011F4 | Value: 0x00002000 |     
+[MMIO]: Address: 0xFE1011F8 | Value: 0x00000291 |     
+[MMIO]: Address: 0xFE1011FC | Value: 0x00001000 |     
+[MMIO]: Address: 0xFE101200 | Value: 0x00000296 |     
+[MMIO]: Address: 0xFE101204 | Value: 0x00006F20 |   o 
+[MMIO]: Address: 0xFE101208 | Value: 0x00000295 |     
+[MMIO]: Address: 0xFE10120C | Value: 0x00008000 |     
+[MMIO]: Address: 0xFE101210 | Value: 0x00000296 |     
+[MMIO]: Address: 0xFE101214 | Value: 0x00006000 |   ` 
+[MMIO]: Address: 0xFE101218 | Value: 0x00000080 |     
+[MMIO]: Address: 0xFE10121C | Value: 0x0000037F |     
+[MMIO]: Address: 0xFE101220 | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE101224 | Value: 0x0000636D |   cm
+[MMIO]: Address: 0xFE101228 | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE10122C | Value: 0x00000296 |     
+[MMIO]: Address: 0xFE101230 | Value: 0x00004000 |   @ 
+[MMIO]: Address: 0xFE101234 | Value: 0x00000200 |     
+[MMIO]: Address: 0xFE101238 | Value: 0x00000000 |     
+[MMIO]: Address: 0xFE10123C | Value: 0x00000291 |     
+[MMIO]: Address: 0xFE101240 | Value: 0x00002000 |     
+[INFO]: END_READ
