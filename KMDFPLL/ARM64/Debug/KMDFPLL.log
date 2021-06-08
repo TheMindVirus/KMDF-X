@@ -1,0 +1,25 @@
+﻿  Building 'KMDFPLL' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Stamping ARM64\Debug\KMDFPLL.inf
+  Stamping [Version] section with DriverVer=06/08/2021,14.38.13.736
+  Driver.c
+  Generating code
+  Finished generating code
+  KMDFPLL.vcxproj -> C:\Users\Alastair\Documents\Visual Studio 2019\Projects\KMDFPLL\ARM64\Debug\KMDFPLL.sys
+  Done Adding Additional Store
+  Successfully signed: C:\Users\Alastair\Documents\Visual Studio 2019\Projects\KMDFPLL\ARM64\Debug\KMDFPLL.sys
+  
+  Driver is 'Universal'.
+  ........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\Users\Alastair\Documents\Visual Studio 2019\Projects\KMDFPLL\ARM64\Debug\KMDFPLL\kmdfpll.cat
+  Done Adding Additional Store
+  Successfully signed: C:\Users\Alastair\Documents\Visual Studio 2019\Projects\KMDFPLL\ARM64\Debug\KMDFPLL\kmdfpll.cat
+  

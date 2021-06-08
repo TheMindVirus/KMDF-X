@@ -14,7 +14,9 @@
 #endif//DEBUG_PATHSIZE
 
 #ifndef DBG
-#define debug(...)   
+#define debug(...)   \
+	KdPrintEx((DPFLTR_IHVDRIVER_ID, DPFLTR_ERROR_LEVEL, __VA_ARGS__)); \
+	KdPrintEx((DPFLTR_IHVDRIVER_ID, DPFLTR_ERROR_LEVEL, "\n"));
 #else
 #define debug(...)   DebugLogToFile(__VA_ARGS__);
 

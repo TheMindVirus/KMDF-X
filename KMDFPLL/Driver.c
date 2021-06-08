@@ -64,8 +64,12 @@ NTSTATUS KMDFPLLPrepareHardware(WDFDEVICE Device, WDFCMRESLIST ResourcesRaw, WDF
     if (!context) { status = STATUS_WDF_INTERNAL_ERROR; debug("[WARN]: %s: 0x%016llX", "IoGetDriverObjectExtension", status); return status; }
 
     base.QuadPart = A2W_PLL_BASE;
-    context->iobase = (PULONG)MmMapIoSpace(base, A2W_PLL_SIZE, MmNonCached);
-    if (!(context->iobase)) { debug("[WARN]: %s: 0x%016llX", "MmMapIoSpace", STATUS_NONE_MAPPED); }
+    context->a2w_base = (PULONG)MmMapIoSpace(base, A2W_PLL_SIZE, MmNonCached);
+    if (!(context->a2w_base)) { debug("[WARN]: %s: 0x%016llX", "MmMapIoSpace", STATUS_NONE_MAPPED); }
+
+    base.QuadPart = CLOCK_MUX_BASE;
+    context->cm_base = (PULONG)MmMapIoSpace(base, CLOCK_MUX_SIZE, MmNonCached);
+    if (!(context->cm_base)) { debug("[WARN]: %s: 0x%016llX", "MmMapIoSpace", STATUS_NONE_MAPPED); }
 
     debug("[CALL]: %s END", "KMDFPLLPrepareHardware");
     return STATUS_SUCCESS;
@@ -80,7 +84,8 @@ NTSTATUS KMDFPLLReleaseHardware(WDFDEVICE Device, WDFCMRESLIST ResourcesTranslat
 
     context = IoGetDriverObjectExtension(WdfDriverWdmGetDriverObject(WdfDeviceGetDriver(Device)), KMDFPLL_TAG_EXTENSION);
     if (!context) { status = STATUS_WDF_INTERNAL_ERROR; debug("[WARN]: %s: 0x%016llX", "IoGetDriverObjectExtension", status); return status; }
-    if (context->iobase) { MmUnmapIoSpace(context->iobase, A2W_PLL_SIZE); context->iobase = NULL; }
+    if (context->a2w_base) { MmUnmapIoSpace(context->a2w_base, A2W_PLL_SIZE); context->a2w_base = NULL; }
+    if (context->cm_base) { MmUnmapIoSpace(context->cm_base, A2W_PLL_SIZE); context->cm_base = NULL; }
     
     debug("[CALL]: %s END", "KMDFPLLReleaseHardware");
     return STATUS_SUCCESS;
@@ -96,19 +101,33 @@ NTSTATUS KMDFPLLPowerUp(WDFDEVICE Device, WDF_POWER_DEVICE_STATE PreviousState)
     context = IoGetDriverObjectExtension(WdfDriverWdmGetDriverObject(WdfDeviceGetDriver(Device)), KMDFPLL_TAG_EXTENSION);
     if (!context) { status = STATUS_WDF_INTERNAL_ERROR; debug("[WARN]: %s: 0x%016llX", "IoGetDriverObjectExtension", status); return status; }
 
-    if (context->iobase)
+    if (context->a2w_base)
     {
         debug("[INFO]: BEGIN_READ");
-        for (ULONG i = 0; i < A2W_PLL_SIZE / 4; ++i)
+        for (ULONG i = 0; i <= A2W_PLL_SIZE / 4; ++i)
         {
-            PHYSICAL_ADDRESS address = MmGetPhysicalAddress(context->iobase + i); UNREFERENCED_PARAMETER(address);
-            //WRITE_REGISTER_NOFENCE_ULONG(context->iobase + i, 0b00000000000000000000000000000000);
-            debug("[PORT]: Offset: 0x%02llX | Address: 0x%016llX | Raw Read: 0x%016llX | NoFence Read: 0x%016llX",
-                i * 4, address.QuadPart, *(context->iobase + i), READ_REGISTER_NOFENCE_ULONG(context->iobase + i));
+            PHYSICAL_ADDRESS address = MmGetPhysicalAddress(context->a2w_base + i); UNREFERENCED_PARAMETER(address);
+            //WRITE_REGISTER_NOFENCE_ULONG(context->a2w_base + i, 0b00000000000000000000000000000000);
+            debug("[A2W_]: Offset: 0x%02llX | Address: 0x%016llX | Raw Read: 0x%016llX | NoFence Read: 0x%016llX",
+                i * 4, address.QuadPart, *(context->a2w_base + i), READ_REGISTER_NOFENCE_ULONG(context->a2w_base + i));
         }
         debug("[INFO]: END_READ");
     }
-    else { debug("[WARN]: %s: 0x%016llX", "KMDFPLL.iobase", STATUS_NONE_MAPPED); }
+    else { debug("[WARN]: %s: 0x%016llX", "KMDFPLL.a2w_base", STATUS_NONE_MAPPED); }
+
+    if (context->cm_base)
+    {
+        debug("[INFO]: BEGIN_READ");
+        for (ULONG i = 0; i <= CLOCK_MUX_SIZE / 4; ++i)
+        {
+            PHYSICAL_ADDRESS address = MmGetPhysicalAddress(context->cm_base + i); UNREFERENCED_PARAMETER(address);
+            //WRITE_REGISTER_NOFENCE_ULONG(context->cm_base + i, 0b00000000000000000000000000000000);
+            debug("[CMUX]: Offset: 0x%02llX | Address: 0x%016llX | Raw Read: 0x%016llX | NoFence Read: 0x%016llX",
+                i * 4, address.QuadPart, *(context->cm_base + i), READ_REGISTER_NOFENCE_ULONG(context->cm_base + i));
+        }
+        debug("[INFO]: END_READ");
+    }
+    else { debug("[WARN]: %s: 0x%016llX", "KMDFPLL.cm_base", STATUS_NONE_MAPPED); }
 
     return STATUS_SUCCESS;
 }
